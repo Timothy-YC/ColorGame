@@ -41,13 +41,13 @@ function setupSquares(){
             let clickedColor = this.style.backgroundColor;
             if (clickedColor === pickedColor) {
                 changeColors(clickedColor);
-                messageDisplay.innerHTML = '<i class="far fa-circle"></i> Correct!';
+                messageDisplay.innerHTML = '<i class="far fa-circle"></i> Correct';
                 messageDisplay.style.color = "green";
                 h1.style.backgroundColor = clickedColor;
                 resetButton.innerHTML = "Play Again?";
             } else {
                 this.style.backgroundColor = "#232323";
-                messageDisplay.innerHTML = '<i class="far fa-times-circle"></i> Play Again!';
+                messageDisplay.innerHTML = '<i class="far fa-times-circle"></i> Wrong';
                 messageDisplay.style.color = "red";
             }
         });
